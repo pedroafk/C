@@ -1,3 +1,9 @@
+/* Criado por:  Pedro Figueiredo
+Este programa mede em milissegundos quanto tempo os algoritmos
+Bubble sort, Selection sort e Quick sort levam para ordenar um
+vetor de tamanho n = 100000 elementos.
+*/
+
 #include <iostream>
 #include <chrono>
 #include <time.h>
@@ -106,29 +112,29 @@ int main ()
     //preencheVetorParcial(vetorParcial,n);
     //preencheVetorAleatorio(VetorAleatorio,n);
 
-    //Medição de tempo bubblesort;
+    //Mediï¿½ï¿½o de tempo bubblesort;
     preencheVetorAleatorio(vetorBubble,n);//Vetor utilizado
     auto bubbleStart = chrono::system_clock::now();
-    bubblesort(vetorBubble,n);//Função utilizada
+    bubblesort(vetorBubble,n);//Funï¿½ï¿½o utilizada
     auto bubbleEnd = chrono::system_clock::now();
     auto bubbleElapsed = chrono::duration_cast<chrono::milliseconds>(bubbleEnd - bubbleStart);
-    cout << "Bubblesort milissegundos: " << bubbleElapsed.count() << endl;   // tempo de saída da função;
+    cout << "Bubblesort milissegundos: " << bubbleElapsed.count() << endl;   // tempo de saï¿½da da funï¿½ï¿½o;
 
-    //Medição de tempo selectionsort;
+    //Mediï¿½ï¿½o de tempo selectionsort;
     preencheVetorAleatorio(vetorSelection,n);   //Vetor utilizado;
     auto selectionStart = chrono::system_clock::now();
-    selectionsort(vetorSelection,n);            //Função utilizada;
+    selectionsort(vetorSelection,n);            //Funï¿½ï¿½o utilizada;
     auto selectionEnd = chrono::system_clock::now();
     auto selectionElapsed = chrono::duration_cast<chrono::milliseconds>(selectionEnd - selectionStart);
-    cout << "Selectionsort milissegundos: " << selectionElapsed.count() << endl;    //tempo de saída da função;
+    cout << "Selectionsort milissegundos: " << selectionElapsed.count() << endl;    //tempo de saï¿½da da funï¿½ï¿½o;
 
-    //Medição de tempo quicksort;
+    //Mediï¿½ï¿½o de tempo quicksort;
     preencheVetorAleatorio(vetorQuick,n);   //Vetor utilizado;
     auto quickStart = chrono::system_clock::now();
-    quicksort(vetorQuick,n);                //Função utilizada;
+    quicksort(vetorQuick,n);                //Funï¿½ï¿½o utilizada;
     auto quickEnd = chrono::system_clock::now();
     auto quickElapsed = chrono::duration_cast<chrono::milliseconds>(quickEnd - quickStart);
-    cout << "Quicksort milissegundos: " << quickElapsed.count() << endl;       //tempo de saída da função;
+    cout << "Quicksort milissegundos: " << quickElapsed.count() << endl;       //tempo de saï¿½da da funï¿½ï¿½o;
 
     return 0;
 }
