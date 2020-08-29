@@ -1,7 +1,7 @@
 /* Criado por:  Pedro Figueiredo
 Este programa mede em milissegundos quanto tempo os algoritmos
 Bubble sort, Selection sort e Quick sort levam para ordenar um
-vetor de tamanho n = 100000 elementos.
+vetor de tamanho n = 100000 elementos;
 */
 
 #include <iostream>
