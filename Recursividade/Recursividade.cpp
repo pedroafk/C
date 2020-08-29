@@ -1,3 +1,11 @@
+/*  Criado por Pedro Figueiredo;
+Este programa tem a finalidade pegar uma entrada massiva de dados e verificar
+de forma recursiva qual e o maiorValor, menorValor destes dados, alem
+de procurar se uma key esta dentro deste vetor massivo de dados, tudo
+utilizando recursividade;
+
+*/
+
 #include <iostream>
 using namespace std;
 
