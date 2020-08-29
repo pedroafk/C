@@ -1,3 +1,14 @@
+/*  Criado por Pedro Figueiredo e Bruna Lima
+Programa desenvolvido durante a disciplina de Algoritmos e Estrutura
+de dados 2 e tem como finalidade pegar uma massa de dados do tipo
+Template e realizar operaÃ§Ãµes com as seguintes estruturas de dados:
+
+Arvore binÃ¡ria
+Busca linear de vector
+Hashing Linear
+Hashing de endereÃ§amento Aberto
+*/
+
 #ifndef CLASSEBINARIA_H_INCLUDED
 #define CLASSEBINARIA_H_INCLUDED
 #include<queue>
@@ -73,7 +84,7 @@ public:
     {
         destroi(raiz);
     }
-    void inicializa()   //Função para inicializar a raiz da arvore com 0;
+    void inicializa()   //Funï¿½ï¿½o para inicializar a raiz da arvore com 0;
     {
         raiz = NULL;
     }
@@ -203,7 +214,7 @@ public:
             cout << "Arvore vazia! " << endl;
     }
 
-    bool verifFolha (No <A> *def)   //Saber se o ponteiro está na folha;
+    bool verifFolha (No <A> *def)   //Saber se o ponteiro estï¿½ na folha;
     {
         if (def->getEsquerdo() == NULL && def->getDireito() == NULL)
             return 1;
@@ -349,7 +360,7 @@ public:
                 }
             }
         }
-        else    //Caso não raiz;
+        else    //Caso nï¿½o raiz;
         {
             ant = def;
             def = aux;

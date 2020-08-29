@@ -1,3 +1,8 @@
+/*  Criado por Pedro Figueiredo
+É um programa básico em C criado durante a ajuda ao um amigo ao qual estava
+cursando a disciplina de programação básica 1
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -1,3 +1,14 @@
+/*  Criado por Pedro Figueiredo e Bruna Lima
+Programa desenvolvido durante a disciplina de Algoritmos e Estrutura
+de dados 2 e tem como finalidade pegar uma massa de dados do tipo
+Template e realizar opera√ß√µes com as seguintes estruturas de dados:
+
+Arvore bin√°ria
+Busca linear de vector
+Hashing Linear
+Hashing de endere√ßamento Aberto
+*/
+
 #include "ClasseBinaria.h"
 #include <iostream>
 #include <cstdlib>
@@ -22,10 +33,10 @@ int main ()
         cout << "a) Arvore" << endl;
         cout << "b) Busca Linear" << endl;
         cout << "c) Hashing Linear" << endl;
-        cout << "d) Hashing EndereÁamento Aberto" << endl;
+        cout << "d) Hashing EndereÔøΩamento Aberto" << endl;
         cout << "z) Sair" << endl;
         cout << endl;
-        cout << "OpÁ„o: ";
+        cout << "OpÔøΩÔøΩo: ";
         cin >> op;
 
         switch (op)
